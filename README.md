@@ -47,7 +47,8 @@ To evaluate different representations, go into `evaluation/`, modify the  `TODO:
 ## Notes 
 1. When producing the results for the submitted paper, we did not set `torch.backends.cudnn.deterministic` and `torch.backends.cudnn.benchmark` properly, thus causing non-deterministic behaviors. We have rerun our experiments and the updated numbers can be found here: https://docs.google.com/spreadsheets/d/1O1e9xdI1SxVvRWK9VVxcO8yefZhePAHGikypWfhRv8c/edit?usp=sharing. Although some of the numbers has changed, the conclusion in the paper remains unchanged. STARTUP is able to outperform all the baselines, bringing forth tremendous improvements to cross-domain few-shot learning. 
 2. All the trainings are done on Nvidia Titan RTX GPU. Evaluation of different representations are performed using Nvidia RTX 2080Ti. Regardless of the GPU models, CUDA11 is used.  
-3. If you find this codebase or STARTUP useful, please consider citing our paper: 
+3. This repo is built upon the official CD-FSL benchmark repo: https://github.com/IBM/cdfsl-benchmark/tree/9c6a42f4bb3d2638bb85d3e9df3d46e78107bc53. We thank the creators of the CD-FSL benchmark for releasing code to the public. 
+4. If you find this codebase or STARTUP useful, please consider citing our paper: 
 ```
 @inproceeding{phoo2021STARTUP,
     title={Self-training for Few-shot Transfer Across Extreme Task Differences},
